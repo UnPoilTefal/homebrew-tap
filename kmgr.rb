@@ -5,21 +5,21 @@
 class Kmgr < Formula
   desc "Description courte de ta CLI"
   homepage "https://github.com/UnPoilTefal/kmgr"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/UnPoilTefal/kmgr/releases/download/v0.3.0/kmgr_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d95914a7387f74852780419781ac2364e0111a3d00576986c86419e44d8ad7c1"
+      url "https://github.com/UnPoilTefal/kmgr/releases/download/v0.4.0/kmgr_0.4.0_darwin_amd64.tar.gz"
+      sha256 "64e99eb57882ed8f0e992e777f0c8b70b43e64b3b970c6c23db26b23a19f1689"
 
       define_method(:install) do
         bin.install "kmgr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/UnPoilTefal/kmgr/releases/download/v0.3.0/kmgr_0.3.0_darwin_arm64.tar.gz"
-      sha256 "820bf4a9b36eb392f5d627c697113831eb2445d35fe3e1bed394ab2d13452c9e"
+      url "https://github.com/UnPoilTefal/kmgr/releases/download/v0.4.0/kmgr_0.4.0_darwin_arm64.tar.gz"
+      sha256 "b8ecab9d377e6c8de45db196fbf86fd4ff2f85f0bb57d5d47c2571c37f50cc01"
 
       define_method(:install) do
         bin.install "kmgr"
@@ -29,15 +29,15 @@ class Kmgr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/UnPoilTefal/kmgr/releases/download/v0.3.0/kmgr_0.3.0_linux_amd64.tar.gz"
-      sha256 "bc33636814a934b0170af2b5c018f1464c56265fda051b87fe03d832cf4e3031"
+      url "https://github.com/UnPoilTefal/kmgr/releases/download/v0.4.0/kmgr_0.4.0_linux_amd64.tar.gz"
+      sha256 "a1062348deb4cc3820abbdd73a5382de5444f834be0e3a9dbc93b2d3bbc3e861"
       define_method(:install) do
         bin.install "kmgr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/UnPoilTefal/kmgr/releases/download/v0.3.0/kmgr_0.3.0_linux_arm64.tar.gz"
-      sha256 "91ba2134fe170c05447612255d1059cc8ebeca927bc9a93cb83c4f101f8530f3"
+      url "https://github.com/UnPoilTefal/kmgr/releases/download/v0.4.0/kmgr_0.4.0_linux_arm64.tar.gz"
+      sha256 "56e5d40721ab3842f4c3c0559a43d115de7a5b826ba0d45fb80a3ecc0a33b9bf"
       define_method(:install) do
         bin.install "kmgr"
       end
