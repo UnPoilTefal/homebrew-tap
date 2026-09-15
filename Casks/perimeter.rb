@@ -4,21 +4,21 @@ cask "perimeter" do
 
   on_macos do
     on_arm do
-      sha256 "d604ef4ef0efed5173e93862d2ef811e5dade218df3c3732523e985656dd4a43"
+      sha256 "022528eb2bd30128b1dcb14df6e80883fdc59f378e580a6d159e6effc477fe60"
       url "https://github.com/UnPoilTefal/perimeter/releases/download/v#{version}/perimeter_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a9aaefa54288dfef5bf7a1a73fe5e01930a063346ae801d6eccc660b50d83ab1"
+      sha256 "8ecf85752a80a5eb1a7fdf3a0204b08ed3a1cd210305e34797548d04ee8c7a85"
       url "https://github.com/UnPoilTefal/perimeter/releases/download/v#{version}/perimeter_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6130c951df9bb9a25f7cc394ea863ee9ae567143bbda75f45c90c720fa56d30d"
+      sha256 "1078544009e3b1fb2770e59f33287d75635ef6550c108022b1c52c3a371835a5"
       url "https://github.com/UnPoilTefal/perimeter/releases/download/v#{version}/perimeter_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "49083cf01a313a1aacb5fe3410b32b26ed6b15a9987c0302b5522ebe5b8ba13e"
+      sha256 "8def47d1c915e8b588d46d178e662f67c6fab639520a19ec479a907e4ce247d1"
       url "https://github.com/UnPoilTefal/perimeter/releases/download/v#{version}/perimeter_#{version}_linux_amd64.tar.gz"
     end
   end
